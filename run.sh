@@ -1,6 +1,13 @@
 JUPYTERLABHOME=/home/jovyan/work
-VOLUME=/home/lcarnevale/Nextcloud/drives/jupyter-drive
+VOLUME=$1
 PORT=10000
+
+if [ ! -d $VOLUME ] 
+then
+    echo "Create directory $VOLUME" 
+    mkdir $VOLUME
+fi
+
 docker run -d --name jupyterlab \
 	-v $VOLUME:$JUPYTERLABHOME \
 	-p $PORT:8888 \
