@@ -1,4 +1,4 @@
-# Jupyter Lab for Bio-Inspired Artificial Intelligence
+# Jupyter Lab for Bio-Inspired Artificial Intelligence Class
 
 ## How to build it
 
@@ -13,3 +13,6 @@ chmod u+x build.sh
 chmod u+x run.sh
 ./run.sh
 ```
+
+## How to use it
+Use your preferred browser to open the http://localhost:10000 link.
