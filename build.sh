@@ -1,0 +1,1 @@
+docker build -t jupyter/minimal-notebook:bioai .
